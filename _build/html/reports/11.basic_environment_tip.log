@@ -1,0 +1,46 @@
+Traceback (most recent call last):
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+    executenb(
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\sungmooklim\anaconda3\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# 경로확인 및 변경 
+
+import os
+print(os.getcwd())  # 경로 확인 
+path = 'C:\\Users\\limsun\\OneDrive - Novelis Inc\\Desktop\\Data Science\\0.personal_practice\\'  # 변경원하는 경로 
+
+os.chdir(path)  # 변경 
+
+print(os.getcwd())# 경로 확인 
+
+# 다른 경로에 있는 파일 불러올때
+path = 'C:\\Users\\limsun\\OneDrive - Novelis Inc\\Desktop\\Data Science\\0.통계관련 self study\\'
+pd.read_csv(path+'copy_of_the_training_data.csv') # ,sheet_name='excel'
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Input [1;32mIn [3][0m, in [0;36m<cell line: 7>[1;34m()[0m
+[0;32m      4[0m [38;5;28mprint[39m(os[38;5;241m.[39mgetcwd())  [38;5;66;03m# 경로 확인 [39;00m
+[0;32m      5[0m path [38;5;241m=[39m [38;5;124m'[39m[38;5;124mC:[39m[38;5;130;01m\\[39;00m[38;5;124mUsers[39m[38;5;130;01m\\[39;00m[38;5;124mlimsun[39m[38;5;130;01m\\[39;00m[38;5;124mOneDrive - Novelis Inc[39m[38;5;130;01m\\[39;00m[38;5;124mDesktop[39m[38;5;130;01m\\[39;00m[38;5;124mData Science[39m[38;5;130;01m\\[39;00m[38;5;124m0.personal_practice[39m[38;5;130;01m\\[39;00m[38;5;124m'[39m  [38;5;66;03m# 변경원하는 경로 [39;00m
+[1;32m----> 7[0m [43mos[49m[38;5;241;43m.[39;49m[43mchdir[49m[43m([49m[43mpath[49m[43m)[49m  [38;5;66;03m# 변경 [39;00m
+[0;32m      9[0m [38;5;28mprint[39m(os[38;5;241m.[39mgetcwd())[38;5;66;03m# 경로 확인 [39;00m
+[0;32m     11[0m [38;5;66;03m# 다른 경로에 있는 파일 불러올때[39;00m
+
+[1;31mFileNotFoundError[0m: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'C:\\Users\\limsun\\OneDrive - Novelis Inc\\Desktop\\Data Science\\0.personal_practice\\'
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'C:\\Users\\limsun\\OneDrive - Novelis Inc\\Desktop\\Data Science\\0.personal_practice\\'
+

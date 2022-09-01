@@ -1,0 +1,37 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Basic environment_tips
+    chapters:
+    - file: 01.basic_environment/01.intro
+      sections:
+      - file: 01.basic_environment/11.basic_environment_tip
+
+  - caption: Pandas_tips
+    chapters:
+    - file: 02.pandas/02.intro
+      sections:
+      - file: 02.pandas/21.Pandas_basic_tip
+      - file: 02.pandas/22.handling_datetype
+      - file: 02.pandas/23.handling_Str
+      - file: 02.pandas/24.merge
+      - file: 02.pandas/25.useful_function
+
+  - caption: Numpy_tips
+    chapters:
+    - file: 03.numpy/03.intro
+      sections:
+      - file: 03.numpy/31.Numpy_basic_tip
+
+  - caption: Pre-processing_tips
+    chapters:
+    - file: 04.pre_process/04.intro
+      sections:
+      - file: 04.pre_process/41.pre_processing_basic_tip
+      - file: 04.pre_process/42.descriptive_anal
+
+  - caption: Visualization
+    chapters:
+    - file: 05.visualization/05.intro
+      sections: 
+      - file: 05.visualization/51.visualization
