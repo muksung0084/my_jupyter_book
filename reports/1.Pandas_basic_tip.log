@@ -1,0 +1,55 @@
+Traceback (most recent call last):
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+    executenb(
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\sungmooklim\anaconda3\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+my_series = pd.Series({"United Kingdom":"London", "India":"New Delhi", "United States":"Washington", "Belgium":"Brussels"})
+display(pd.DataFrame(my_series))
+
+my_dict = {"a": ['1', '3'], "b": ['1', '2'], "c": ['2', '4']}
+display(pd.DataFrame(my_dict))
+
+sample = pd.DataFrame({'type' : ['k','k','k','y','y','y','y','k'],
+                       'a' : [1,2,3,4,5,6,7,np.NaN]},index=[1,2,3,4,5,6,7,8])
+
+my_df = pd.DataFrame(data=[4,5,6,7], index=range(0,4), columns=['A'])
+display(pd.DataFrame(my_df))
+
+comp_mf34 = pd.DataFrame(
+    columns=['5182','3104','6***','5***'],
+    data=0,
+    index=['mf3_batches','mf3_press_pv(std)','mf3_temp_pv(std)','mf4_batches','mf3_target_func','mf4_press_pv(std)','mf4_temp_pv(std)','mf4_target_func'])
+
+comp_mf34.index.name = 'factors'
+comp_mf34.columns.name = 'alloy'
+
+display(comp_mf34)
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mNameError[0m                                 Traceback (most recent call last)
+Input [1;32mIn [2][0m, in [0;36m<cell line: 7>[1;34m()[0m
+[0;32m      4[0m my_dict [38;5;241m=[39m {[38;5;124m"[39m[38;5;124ma[39m[38;5;124m"[39m: [[38;5;124m'[39m[38;5;124m1[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124m3[39m[38;5;124m'[39m], [38;5;124m"[39m[38;5;124mb[39m[38;5;124m"[39m: [[38;5;124m'[39m[38;5;124m1[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124m2[39m[38;5;124m'[39m], [38;5;124m"[39m[38;5;124mc[39m[38;5;124m"[39m: [[38;5;124m'[39m[38;5;124m2[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124m4[39m[38;5;124m'[39m]}
+[0;32m      5[0m display(pd[38;5;241m.[39mDataFrame(my_dict))
+[0;32m      7[0m sample [38;5;241m=[39m pd[38;5;241m.[39mDataFrame({[38;5;124m'[39m[38;5;124mtype[39m[38;5;124m'[39m : [[38;5;124m'[39m[38;5;124mk[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124mk[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124mk[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124my[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124my[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124my[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124my[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124mk[39m[38;5;124m'[39m],
+[1;32m----> 8[0m                        [38;5;124m'[39m[38;5;124ma[39m[38;5;124m'[39m : [[38;5;241m1[39m,[38;5;241m2[39m,[38;5;241m3[39m,[38;5;241m4[39m,[38;5;241m5[39m,[38;5;241m6[39m,[38;5;241m7[39m,[43mnp[49m[38;5;241m.[39mNaN]},index[38;5;241m=[39m[[38;5;241m1[39m,[38;5;241m2[39m,[38;5;241m3[39m,[38;5;241m4[39m,[38;5;241m5[39m,[38;5;241m6[39m,[38;5;241m7[39m,[38;5;241m8[39m])
+[0;32m     10[0m my_df [38;5;241m=[39m pd[38;5;241m.[39mDataFrame(data[38;5;241m=[39m[[38;5;241m4[39m,[38;5;241m5[39m,[38;5;241m6[39m,[38;5;241m7[39m], index[38;5;241m=[39m[38;5;28mrange[39m([38;5;241m0[39m,[38;5;241m4[39m), columns[38;5;241m=[39m[[38;5;124m'[39m[38;5;124mA[39m[38;5;124m'[39m])
+[0;32m     11[0m display(pd[38;5;241m.[39mDataFrame(my_df))
+
+[1;31mNameError[0m: name 'np' is not defined
+NameError: name 'np' is not defined
+

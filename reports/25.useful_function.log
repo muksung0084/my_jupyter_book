@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+    executenb(
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\sungmooklim\anaconda3\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\sungmooklim\anaconda3\lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# 공정데이터 적용 예시.
+observable1 = mf3_cleaned.groupby('BATCHNO')['Time'].apply(lambda x: x.max() - x.min()) >=  pd.Timedelta(minutes=100) 
+observable2 = mf3_cleaned.groupby('BATCHNO')['Time'].apply(lambda x: x.max() - x.min()) <=  pd.Timedelta(minutes=150) 
+observable3 = mf4_cleaned.groupby('BATCHNO')['Time'].apply(lambda x: x.max() - x.min()) >=  pd.Timedelta(minutes=100) 
+observable4 = mf4_cleaned.groupby('BATCHNO')['Time'].apply(lambda x: x.max() - x.min()) <=  pd.Timedelta(minutes=150)
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mNameError[0m                                 Traceback (most recent call last)
+Input [1;32mIn [5][0m, in [0;36m<cell line: 2>[1;34m()[0m
+[0;32m      1[0m [38;5;66;03m# 공정데이터 적용 예시.[39;00m
+[1;32m----> 2[0m observable1 [38;5;241m=[39m [43mmf3_cleaned[49m[38;5;241m.[39mgroupby([38;5;124m'[39m[38;5;124mBATCHNO[39m[38;5;124m'[39m)[[38;5;124m'[39m[38;5;124mTime[39m[38;5;124m'[39m][38;5;241m.[39mapply([38;5;28;01mlambda[39;00m x: x[38;5;241m.[39mmax() [38;5;241m-[39m x[38;5;241m.[39mmin()) [38;5;241m>[39m[38;5;241m=[39m  pd[38;5;241m.[39mTimedelta(minutes[38;5;241m=[39m[38;5;241m100[39m) 
+[0;32m      3[0m observable2 [38;5;241m=[39m mf3_cleaned[38;5;241m.[39mgroupby([38;5;124m'[39m[38;5;124mBATCHNO[39m[38;5;124m'[39m)[[38;5;124m'[39m[38;5;124mTime[39m[38;5;124m'[39m][38;5;241m.[39mapply([38;5;28;01mlambda[39;00m x: x[38;5;241m.[39mmax() [38;5;241m-[39m x[38;5;241m.[39mmin()) [38;5;241m<[39m[38;5;241m=[39m  pd[38;5;241m.[39mTimedelta(minutes[38;5;241m=[39m[38;5;241m150[39m) 
+[0;32m      4[0m observable3 [38;5;241m=[39m mf4_cleaned[38;5;241m.[39mgroupby([38;5;124m'[39m[38;5;124mBATCHNO[39m[38;5;124m'[39m)[[38;5;124m'[39m[38;5;124mTime[39m[38;5;124m'[39m][38;5;241m.[39mapply([38;5;28;01mlambda[39;00m x: x[38;5;241m.[39mmax() [38;5;241m-[39m x[38;5;241m.[39mmin()) [38;5;241m>[39m[38;5;241m=[39m  pd[38;5;241m.[39mTimedelta(minutes[38;5;241m=[39m[38;5;241m100[39m) 
+
+[1;31mNameError[0m: name 'mf3_cleaned' is not defined
+NameError: name 'mf3_cleaned' is not defined
+
