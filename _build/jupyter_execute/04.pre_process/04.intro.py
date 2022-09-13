@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Intro
+# # Intro _ Pre-process
 
-# <span style="color:blue"> <font size="5">Pre_Processing</span> </font>
+# <span style="color:blue"> <font size="5">Pre-Processing</span> </font>
 
 # " Garbage in Garbage out  "\
 # 적절히 정제되지 못한 데이터들은 잘못된 결과값을 만들고, 이는 전혀 쓸모없는 insight가 됩니다.\

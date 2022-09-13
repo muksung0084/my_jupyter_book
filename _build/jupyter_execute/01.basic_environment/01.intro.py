@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Intro
+# # Intro _ Basic environment setting
 
-# <span style="color:blue"> <font size="5">Basic environment setting2 </span> </font>
+# <span style="color:blue"> <font size="5">Basic environment setting </span> </font>
 
 # python - jupyter note book의 환경에서 작업을 하다보면,
 # 

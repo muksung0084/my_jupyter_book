@@ -3,88 +3,108 @@
 
 # ## Data Pre-processing _ tips
 
-# 
-
-# In[1]:
+# In[5]:
 
 
 import pandas as pd 
 import numpy as np
 
 
+# In[52]:
+
+
+sample = pd.DataFrame({'type' : ['k','y','k','y',np.nan],
+                       'a' : [1,2,'1 ',3,np.nan]},index=[1,2,3,4,5])
+display(pd.DataFrame(sample))
+
+
 # #### null 값 check 
 
-# In[2]:
+# In[8]:
 
 
-for i in temp_anal.columns : 
+for i in sample.columns : 
     print(i+" _null : ")
-    print(temp_anal[i].isnull().sum())
-    print(temp_anal[i].notnull().sum())
+    print(sample[i].isnull().sum())
+    print(sample[i].notnull().sum())
 
 
-# In[ ]:
+# In[9]:
 
 
-temp_anal.isnull().sum(1) # row 마다 결측값 개수 
-temp_anal.isnull().sum()  # column마다 결측값 개수 
+sample.isnull().sum(1) # row 마다 결측값 개수 
+sample.isnull().sum()  # column마다 결측값 개수 
 
 
-# 
+# In[14]:
+
+
+sample
+
+
+# In[19]:
+
+
+df_=sample.copy()
+
 
 # #### null값 처리 
 
-# In[ ]:
+# In[53]:
 
 
 # 어느 칼럼에 하나라도 nan값이 박혀있다면 그 행을 모두 지울것이다.  => 열, 즉 칼럼을 지우고 싶으면 axis=1 
-df_=df.copy()
-df_=df_.dropna(axis=0,how='any')
-df_
-
-# 아니다 해당 행이 모든 칼럼값에 다 nan값이 박혀있다면 그때, 그 행을 모두 지울것이다.
-df_.dropna(axis=0,how='all')
+df_=sample.copy()
+display(df_.dropna(axis=0,how='any'))
+display(df_.dropna(axis=0,how='all'))
 
 
-# In[ ]:
+# In[54]:
 
 
-# 결측치 무시하고 숫자 DATA로 바꾸기 
-data_1['RF1_GAS_DAY_TOTAL'] = pd.to_numeric(data_1['RF1_GAS_DAY_TOTAL'], errors='coerce')
+# 결측치 무시하고 숫자 DATA로 바꾸기  // 컬럼에 들어와야할 데이터가 분명 숫자 데이터인데 다른 타입의 에러데이터가 낄 경우 
+df_['a'] = pd.to_numeric(df_['a'], errors='coerce')
+display(df_)
 
 # 이후 결측치 파악 
-print(data_1['RF1_GAS_DAY_TOTAL'].isnull().sum())
+print("\n결측치")
+print(df_['a'].isnull().sum())
 
 # 해당 결측치 DATA DROP 
-data_1 = data_1.dropna(subset = ['RF1_GAS_DAY_TOTAL'])
+df_.dropna(subset = ['a'])
+#df_ = df_.dropna(subset = ['a'])
 
 
 # 
 
 # #### 중복값 처리
 
-# In[ ]:
+# In[55]:
 
 
 # 중복값 제거 
-df_['키']=df_['키'].drop_duplicates(keep='first')
-
+display(df_.drop_duplicates(['type'],keep='first'))
 # 컬럼이 두개 이상일 경우 --> 두개의 컬럼 조건이 모두 같아야 삭제된다. 
-df_.drop_duplicates(['키','그룹'],keep='first')
+display(df_.drop_duplicates(['type','a'],keep='first'))
 
 
-# 
+# In[61]:
 
-# ### 원하는 조건부 drop _ (feat. loc,iloc)
 
-# In[ ]:
+sample[sample['a']==1]
+
+
+# #### 원하는 조건부 drop _ (feat. loc,iloc)
+
+# In[65]:
 
 
 # 해당 index drop하기
-print(sample.drop(sample.iloc[1:4]).shape)
+display(sample)
+display(sample.drop(sample[sample['a']==1].index))  # 3번열의 1번은 문자 타입이라서 삭제가 안되는 것임.
 
 
-# #### - loc , iloc 활용 
+# #### loc , iloc 활용 
 
 # In[ ]:
 
@@ -96,7 +116,7 @@ print(sample.drop(sample.iloc[1:4]).shape)
 ### > 해당 색인 추출에서 중요한것은 []안에 ,기준 첫번째는 행에대한 조건을 기입 - 두번째는 열에대한 조건을 기입하는 것이다.
 
 
-# In[5]:
+# In[ ]:
 
 
 data1 = ['a','b','c','d','e','f','g','h','i','j']
@@ -124,14 +144,16 @@ display(pd.DataFrame(index_sample.iloc[[3,4,6],[0,1]]))
 display(index_sample.iloc[:,0][:5])
 
 
-# 
+# #### 컬럼명 바꾸기
 
-# ### 컬럼명 바꾸기
-
-# In[ ]:
+# In[70]:
 
 
-data.rename(columns = {'RF1_N2_BNR_OFF_TIME' : 'regen_2_off_time','RF1_FIC01_SP': 'rf1_gas_flow_sp'},inplace=True)
+df_.rename(columns = {'type' : 'TYPE','a': 'A'},inplace=True)
 
 
-# 
+# In[71]:
+
+
+df_
+

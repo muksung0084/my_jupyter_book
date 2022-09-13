@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to My Jupyter Book
                 </a>
             </li>
         </ul>
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../01.basic_environment/01.intro.html">
-   Intro
+   Intro _ Basic environment setting
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -145,7 +145,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="02.intro.html">
-   Intro
+   Intro _ Pandas
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03.numpy/03.intro.html">
-   Intro
+   Intro _ Numpy
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../04.pre_process/04.intro.html">
-   Intro
+   Intro _ Pre-process
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -242,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../05.visualization/05.intro.html">
-   Intro
+   Intro _ Visualization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -316,7 +316,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/muksung0084/book.git/master?urlpath=tree/docs/02.pandas/23.handling_Str.ipynb"
+        <a href="https://mybinder.org/v2/gh/muksung0084/my_jupyter_book.git/master?urlpath=tree/docs/02.pandas/23.handling_Str.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -359,7 +359,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/muksung0084/book.git"
+        <a href="https://github.com/muksung0084/my_jupyter_book.git"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -376,7 +376,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/muksung0084/book.git/issues/new?title=Issue%20on%20page%20%2F02.pandas/23.handling_Str.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/muksung0084/my_jupyter_book.git/issues/new?title=Issue%20on%20page%20%2F02.pandas/23.handling_Str.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -469,26 +469,151 @@ title="Print to PDF"
 <h1>Str type handling<a class="headerlink" href="#str-type-handling" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 문자열 처리 관련 함수. </span>
-<span class="o">&gt;&gt;</span> <span class="mf">1.</span> <span class="n">split</span> <span class="o">--&gt;</span> <span class="n">해당</span> <span class="n">obstacle을</span> <span class="n">기준으로</span> <span class="n">문자열을</span> <span class="n">나눈다</span><span class="o">.</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">df</span><span class="p">[]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
-
-<span class="o">&gt;&gt;</span> <span class="mf">2.</span> <span class="n">replace</span> <span class="o">--&gt;</span> <span class="n">해당</span> <span class="n">obstacle을</span> <span class="n">다른</span> <span class="n">것으로</span> <span class="n">대체한다</span><span class="o">.</span> 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">df</span><span class="p">[]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">-</span><span class="n">를</span> <span class="n">공백없는</span> <span class="n">칸으로</span> <span class="n">매운다</span><span class="o">.</span>
-
-<span class="o">&gt;&gt;</span> <span class="mf">3.</span> <span class="n">strip</span> <span class="o">--&gt;</span> <span class="n">값에</span> <span class="n">공백만</span> <span class="n">존재하는</span> <span class="n">경우</span><span class="p">,</span> <span class="n">문자열</span> <span class="n">값의</span> <span class="n">앞뒤로</span> <span class="n">공백이</span> <span class="n">존재하는</span> <span class="n">경우</span> <span class="n">이를</span> <span class="n">없애고</span> <span class="n">싶을때</span> 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">df</span><span class="p">[]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>  
-
-<span class="o">&gt;&gt;</span> <span class="mf">4.</span> <span class="nb">str</span>  <span class="o">--&gt;</span><span class="n">원하는</span> <span class="n">부분의</span> <span class="n">문자열만</span> <span class="n">끈고</span> <span class="n">싶을때</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">dataframe</span><span class="p">[</span><span class="s1">&#39;series&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:]</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;A-B C&#39;</span><span class="p">,</span><span class="s1">&#39;B CD&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="s1">&#39;dog &#39;</span><span class="p">,</span><span class="s1">&#39;c-a-t&#39;</span><span class="p">,</span><span class="s1">&#39; 1 &#39;</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="simple">
+<li><p>split –&gt; 해당 obstacle을 기준으로 문자열을 나눈다.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="o">&gt;&gt;</span> <span class="mf">1.</span> <span class="n">split</span> <span class="o">--&gt;</span> <span class="n">해당</span> <span class="n">obstacle을</span> <span class="n">기준으로</span> <span class="n">문자열을</span> <span class="n">나눈다</span><span class="o">.</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0          [A]
+1          [B]
+2     [A, B C]
+3       [B CD]
+4          NaN
+5       [dog ]
+6    [c, a, t]
+7        [ 1 ]
+Name: data, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="simple">
+<li><p>replace –&gt; 해당 obstacle을 다른 것으로 대체한다.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0       A
+1       B
+2    AB C
+3    B CD
+4     NaN
+5    dog 
+6     cat
+7      1 
+Name: data, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="simple">
+<li><p>strip –&gt; 값에 공백만 존재하는 경우, 문자열 값의 앞뒤로 공백이 존재하는 경우 이를 없애고 싶을때</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0        A
+1        B
+2    A-B C
+3     B CD
+4      NaN
+5      dog
+6    c-a-t
+7        1
+Name: data, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="simple">
+<li><p>str  –&gt;원하는 부분의 문자열만 끈고 싶을때</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      A
+1      B
+2     A-
+3     B 
+4    NaN
+5     do
+6     c-
+7      1
+Name: data, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="simple">
+<li><p>str  –&gt; 소문자, 대문자</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0        a
+1        b
+2    a-b c
+3     b cd
+4      NaN
+5     dog 
+6    c-a-t
+7       1 
+Name: data, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0        A
+1        B
+2    A-B C
+3     B CD
+4      NaN
+5     DOG 
+6    C-A-T
+7       1 
+Name: data, dtype: object
 </pre></div>
 </div>
 </div>

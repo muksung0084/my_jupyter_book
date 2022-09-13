@@ -33,7 +33,7 @@ pie: 파이 그래프
 scatter: 산점도 그래프
 # 
 
-# In[1]:
+# In[2]:
 
 
 import pandas as pd
@@ -41,7 +41,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# In[2]:
+# In[5]:
 
 
 df = pd.read_csv('https://bit.ly/ds-house-price-clean')
@@ -49,7 +49,7 @@ df = pd.read_csv('https://bit.ly/ds-house-price-clean')
 
 # 
 
-# In[3]:
+# In[4]:
 
 
 a=['X','Y','Z']
@@ -76,7 +76,7 @@ plt.show()
 
 
 
-# In[4]:
+# In[ ]:
 
 
 # hist --> histogram 도수분포표 

@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to My Jupyter Book
                 </a>
             </li>
         </ul>
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../01.basic_environment/01.intro.html">
-   Intro
+   Intro _ Basic environment setting
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -145,7 +145,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="02.intro.html">
-   Intro
+   Intro _ Pandas
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03.numpy/03.intro.html">
-   Intro
+   Intro _ Numpy
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../04.pre_process/04.intro.html">
-   Intro
+   Intro _ Pre-process
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -242,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../05.visualization/05.intro.html">
-   Intro
+   Intro _ Visualization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -316,7 +316,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/muksung0084/book.git/master?urlpath=tree/docs/02.pandas/24.merge.ipynb"
+        <a href="https://mybinder.org/v2/gh/muksung0084/my_jupyter_book.git/master?urlpath=tree/docs/02.pandas/24.merge.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -359,7 +359,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/muksung0084/book.git"
+        <a href="https://github.com/muksung0084/my_jupyter_book.git"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -376,7 +376,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/muksung0084/book.git/issues/new?title=Issue%20on%20page%20%2F02.pandas/24.merge.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/muksung0084/my_jupyter_book.git/issues/new?title=Issue%20on%20page%20%2F02.pandas/24.merge.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -464,13 +464,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sql-term-base">
-   sql 쿼리문 활용 &lt;- 시간 term base로 묶기
+  <a class="reference internal nav-link" href="#concat-base">
+   concat 활용하여 행,열 base로 붙이기
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#concat-base">
-   concat 활용하여 행,열 base로 붙이기
+  <a class="reference internal nav-link" href="#sql-term-base">
+   sql 쿼리문 활용 &lt;- 시간 term base로 묶기
   </a>
  </li>
 </ul>
@@ -493,13 +493,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sql-term-base">
-   sql 쿼리문 활용 &lt;- 시간 term base로 묶기
+  <a class="reference internal nav-link" href="#concat-base">
+   concat 활용하여 행,열 base로 붙이기
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#concat-base">
-   concat 활용하여 행,열 base로 붙이기
+  <a class="reference internal nav-link" href="#sql-term-base">
+   sql 쿼리문 활용 &lt;- 시간 term base로 묶기
   </a>
  </li>
 </ul>
@@ -514,6 +514,42 @@ title="Print to PDF"
                 
   <section id="data-merge">
 <h1>Data merge<a class="headerlink" href="#data-merge" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<section id="concat-base">
+<h2>concat 활용하여 행,열 base로 붙이기<a class="headerlink" href="#concat-base" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> 
+<span class="kn">import</span> <span class="nn">time</span> 
+
+<span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">:</span> 
+    <span class="n">a</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span> <span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)]</span> <span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">])</span>
+    <span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">a</span><span class="p">,</span><span class="n">test_df</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1">#pd.merge([test_df,a])</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test_df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                  time
+0  2022-09-13 16:34:33
+1  2022-09-13 16:34:32
+2  2022-09-13 16:34:31
+3  2022-09-13 16:34:30
+4  2022-09-13 16:34:29
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 <section id="sql-term-base">
 <h2>sql 쿼리문 활용 &lt;- 시간 term base로 묶기<a class="headerlink" href="#sql-term-base" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
@@ -521,7 +557,7 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandasql</span> <span class="k">as</span> <span class="nn">ps</span> 
 
 <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT a.*</span>
-<span class="s2">from tableb b inner join tablea a on ((a.test1 between b.cast1 and b.cast2) &amp; ( a.batch=b.BATCH)); &quot;&quot;&quot;</span>
+<span class="s2">           from tableb b inner join tablea a on ((a.test1 between b.cast1 and b.cast2) &amp; ( a.batch=b.BATCH)); &quot;&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -531,25 +567,9 @@ title="Print to PDF"
 <span class="nn">Input In [1],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandasql</span> <span class="k">as</span> <span class="nn">ps</span> 
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT a.*</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> from tableb b inner join tablea a on ((a.test1 between b.cast1 and b.cast2) &amp; ( a.batch=b.BATCH)); &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2">            from tableb b inner join tablea a on ((a.test1 between b.cast1 and b.cast2) &amp; ( a.batch=b.BATCH)); &quot;&quot;&quot;</span>
 
 <span class="ne">ModuleNotFoundError</span>: No module named &#39;pandasql&#39;
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="concat-base">
-<h2>concat 활용하여 행,열 base로 붙이기<a class="headerlink" href="#concat-base" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">:</span> 
-    <span class="n">a</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span> <span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)]</span> <span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">])</span>
-    <span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">a</span><span class="p">,</span><span class="n">test_df</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="c1">#pd.merge([test_df,a])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">test_df</span><span class="p">)</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

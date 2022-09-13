@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Intro" href="../04.pre_process/04.intro.html" />
-    <link rel="prev" title="Intro" href="03.intro.html" />
+    <link rel="next" title="Intro _ Pre-process" href="../04.pre_process/04.intro.html" />
+    <link rel="prev" title="Intro _ Numpy" href="03.intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to My Jupyter Book
                 </a>
             </li>
         </ul>
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../01.basic_environment/01.intro.html">
-   Intro
+   Intro _ Basic environment setting
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -145,7 +145,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../02.pandas/02.intro.html">
-   Intro
+   Intro _ Pandas
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="03.intro.html">
-   Intro
+   Intro _ Numpy
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../04.pre_process/04.intro.html">
-   Intro
+   Intro _ Pre-process
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -242,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../05.visualization/05.intro.html">
-   Intro
+   Intro _ Visualization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -316,7 +316,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/muksung0084/book.git/master?urlpath=tree/docs/03.numpy/31.Numpy_basic_tip.ipynb"
+        <a href="https://mybinder.org/v2/gh/muksung0084/my_jupyter_book.git/master?urlpath=tree/docs/03.numpy/31.Numpy_basic_tip.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -359,7 +359,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/muksung0084/book.git"
+        <a href="https://github.com/muksung0084/my_jupyter_book.git"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -376,7 +376,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/muksung0084/book.git/issues/new?title=Issue%20on%20page%20%2F03.numpy/31.Numpy_basic_tip.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/muksung0084/my_jupyter_book.git/issues/new?title=Issue%20on%20page%20%2F03.numpy/31.Numpy_basic_tip.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -564,6 +564,14 @@ title="Print to PDF"
 </div>
 <section id="numpy-choice">
 <h2>numpy 무작위 추출 _ choice<a class="headerlink" href="#numpy-choice" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>숫자가 존재하는 list에서 몇개씩(크기)무작위 추출</p></li>
+</ul>
+<p>np.random.choice(리스트명,크기)</p>
+<ul class="simple">
+<li><p>리스트1에서 무작위로 3개의 sample을 뽑을것인데, 각각이 뽑힐 확률을 prob를 따르겠다.</p></li>
+</ul>
+<p>np.random.choice(리스트명,크기,p=??)  # p값에 확률을 지정할 수 있음</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list1</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
@@ -573,7 +581,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([3, 2, 5])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2, 1, 4])
 </pre></div>
 </div>
 </div>
@@ -584,32 +592,15 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 0에서 1사이의 값 중에서 난수 생성. </span>
-<span class="c1"># 0~1 사이의 숫자로 10 by 10 array 생성 </span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>    
+<span class="c1"># 0~1 사이의 숫자로 3 by 3 array 생성 </span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>    
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.75655495, 0.54229995, 0.2938064 , 0.34251635, 0.87346346,
-        0.12448895, 0.38295403, 0.62309372, 0.96557001, 0.9552338 ],
-       [0.49226343, 0.02306398, 0.6047702 , 0.81711143, 0.50116237,
-        0.79567899, 0.3776563 , 0.92947751, 0.32051512, 0.16764266],
-       [0.86424992, 0.29109518, 0.93400834, 0.53939549, 0.54134317,
-        0.83186477, 0.91360612, 0.05301847, 0.38165256, 0.50949076],
-       [0.61248237, 0.52767267, 0.0816472 , 0.22515444, 0.93337001,
-        0.38461556, 0.40993307, 0.10251914, 0.03726004, 0.55284268],
-       [0.65283898, 0.22797612, 0.32267048, 0.6940634 , 0.0715051 ,
-        0.39518244, 0.8308637 , 0.03321518, 0.0538431 , 0.50554519],
-       [0.23475672, 0.96093806, 0.86376456, 0.07713218, 0.5177717 ,
-        0.53722854, 0.8951199 , 0.72357269, 0.69101556, 0.4260986 ],
-       [0.50721065, 0.70465191, 0.75237426, 0.62677786, 0.69412689,
-        0.18661746, 0.6796119 , 0.1924238 , 0.73109063, 0.27648748],
-       [0.34560875, 0.03269558, 0.4686939 , 0.83032677, 0.71059441,
-        0.72572347, 0.34277595, 0.31762522, 0.62312771, 0.80985442],
-       [0.78052442, 0.73713343, 0.8509192 , 0.32816074, 0.14689829,
-        0.9670559 , 0.70402021, 0.55909498, 0.68117631, 0.77105407],
-       [0.48401237, 0.91731322, 0.80210496, 0.21411609, 0.5536845 ,
-        0.20200873, 0.47889   , 0.78370582, 0.91754517, 0.8446763 ]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.05883125, 0.10910574, 0.80219088],
+       [0.62062839, 0.32927213, 0.49599276],
+       [0.31572383, 0.69866739, 0.1934804 ]])
 </pre></div>
 </div>
 </div>
@@ -620,21 +611,14 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 표준 정규분포에서 무작위 숫자 추출  // [0, 1) 범위에서 균일한 분포</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>   <span class="c1"># 3 by 2 matrix</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[-1.48856603,  1.03303172],
-       [ 0.40694919, -0.93538376],
-       [ 0.38811512,  1.9694033 ],
-       [-2.2394653 , -1.10709295],
-       [-0.15486786, -1.08636304],
-       [-0.03321779, -1.0427401 ],
-       [ 0.96278244, -0.69532324],
-       [ 0.62783753, -0.30962165],
-       [-0.37855707, -1.65981281],
-       [-0.13517128, -0.61759786]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 0.3788141 ,  2.00119906],
+       [ 0.77815122,  2.2918404 ],
+       [-0.91964995,  1.88485368]])
 </pre></div>
 </div>
 </div>
@@ -650,7 +634,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2.3330984  1.40767875 2.2503513  4.06169681 2.17450277]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[ 2.04683083  0.75465326  0.03066454  1.9809235  -0.48535755]
 </pre></div>
 </div>
 </div>
@@ -682,10 +666,26 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1.42309307 0.21696804]
-[ 0.98482157  1.74666719 -0.6996845  -0.36358576]
-[[ 3.40270237  4.42859599  1.56577173]
- [ 7.32941811 -0.78265778  0.6730633 ]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.10083797 2.11860567]
+[0.53259917 2.04129711 2.65236731 0.40806498]
+[[0.38188509 6.1195246  5.08644936]
+ [4.52018516 4.04262745 1.67071739]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span> <span class="p">,</span> <span class="n">size</span> <span class="o">=</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># 0~7사이의 정수 생성, index는 10개</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    5
+1    1
+2    2
+dtype: int32
 </pre></div>
 </div>
 </div>
@@ -701,6 +701,11 @@ title="Print to PDF"
 
 <span class="n">my_2darray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
 <span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">my_2darray</span><span class="p">))</span>
+
+
+<span class="n">sample</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;type&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">],</span>
+                       <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">]},</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -743,6 +748,126 @@ title="Print to PDF"
     </tr>
   </tbody>
 </table>
+</div></div><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>type</th>
+      <th>a</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>k</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>y</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>k</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># np.random.randn -&gt; 평균 0 , 표준편차 1인 표준정규분포 난수를 matrix array(n,m)으로 생성 </span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)]</span> <span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;ABCD&#39;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2.065152</td>
+      <td>-1.360815</td>
+      <td>-1.308379</td>
+      <td>0.950800</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-2.387672</td>
+      <td>1.867302</td>
+      <td>-0.136879</td>
+      <td>1.003140</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.471534</td>
+      <td>-0.635785</td>
+      <td>1.205115</td>
+      <td>-0.415499</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.437057</td>
+      <td>-0.214154</td>
+      <td>1.162567</td>
+      <td>0.348693</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-1.828993</td>
+      <td>1.152551</td>
+      <td>-0.546035</td>
+      <td>-0.950850</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.029409</td>
+      <td>0.613722</td>
+      <td>-0.060319</td>
+      <td>-0.766462</td>
+    </tr>
+  </tbody>
+</table>
 </div></div></div>
 </div>
 </section>
@@ -755,20 +880,6 @@ title="Print to PDF"
                                   <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">skimming_data2</span><span class="p">[</span><span class="s1">&#39;skimm&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">between</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="s1">&#39;7~10&#39;</span><span class="p">,</span> <span class="s1">&#39;10~&#39;</span><span class="p">))</span>
 <span class="c1"># inull로 np where </span>
 <span class="n">total_data</span><span class="p">[</span><span class="s1">&#39;edge_crack&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">total_data</span><span class="p">[</span><span class="s1">&#39;HFI 비고&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">Input In [9],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#np.where </span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">skimming_data2</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">skimming_data2</span><span class="p">[</span><span class="s1">&#39;skimm&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">between</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span><span class="s1">&#39;4~6&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>                                   <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">skimming_data2</span><span class="p">[</span><span class="s1">&#39;skimm&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">between</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="s1">&#39;7~10&#39;</span><span class="p">,</span> <span class="s1">&#39;10~&#39;</span><span class="p">))</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># inull로 np where </span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">total_data</span><span class="p">[</span><span class="s1">&#39;edge_crack&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">total_data</span><span class="p">[</span><span class="s1">&#39;HFI 비고&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;skimming_data2&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -808,13 +919,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Intro</p>
+            <p class="prev-next-title">Intro _ Numpy</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../04.pre_process/04.intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Intro</p>
+        <p class="prev-next-title">Intro _ Pre-process</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

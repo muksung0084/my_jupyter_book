@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Datetype handling" href="22.handling_datetype.html" />
-    <link rel="prev" title="Intro" href="02.intro.html" />
+    <link rel="prev" title="Intro _ Pandas" href="02.intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to My Jupyter Book
                 </a>
             </li>
         </ul>
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../01.basic_environment/01.intro.html">
-   Intro
+   Intro _ Basic environment setting
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -145,7 +145,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="02.intro.html">
-   Intro
+   Intro _ Pandas
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03.numpy/03.intro.html">
-   Intro
+   Intro _ Numpy
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../04.pre_process/04.intro.html">
-   Intro
+   Intro _ Pre-process
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -242,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../05.visualization/05.intro.html">
-   Intro
+   Intro _ Visualization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -316,7 +316,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/muksung0084/book.git/master?urlpath=tree/docs/02.pandas/21.Pandas_basic_tip.ipynb"
+        <a href="https://mybinder.org/v2/gh/muksung0084/my_jupyter_book.git/master?urlpath=tree/docs/02.pandas/21.Pandas_basic_tip.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -359,7 +359,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/muksung0084/book.git"
+        <a href="https://github.com/muksung0084/my_jupyter_book.git"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -376,7 +376,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/muksung0084/book.git/issues/new?title=Issue%20on%20page%20%2F02.pandas/21.Pandas_basic_tip.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/muksung0084/my_jupyter_book.git/issues/new?title=Issue%20on%20page%20%2F02.pandas/21.Pandas_basic_tip.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -468,6 +468,16 @@ title="Print to PDF"
    Series, DataFrame sample 만들기
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataframe-method">
+   dataframe관련 조회 method및 속성
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataframe">
+   dataframe 정렬
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -490,6 +500,16 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#series-dataframe-sample">
    Series, DataFrame sample 만들기
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataframe-method">
+   dataframe관련 조회 method및 속성
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataframe">
+   dataframe 정렬
   </a>
  </li>
 </ul>
@@ -516,7 +536,7 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_series</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">({</span><span class="s2">&quot;United Kingdom&quot;</span><span class="p">:</span><span class="s2">&quot;London&quot;</span><span class="p">,</span> <span class="s2">&quot;India&quot;</span><span class="p">:</span><span class="s2">&quot;New Delhi&quot;</span><span class="p">,</span> <span class="s2">&quot;United States&quot;</span><span class="p">:</span><span class="s2">&quot;Washington&quot;</span><span class="p">,</span> <span class="s2">&quot;Belgium&quot;</span><span class="p">:</span><span class="s2">&quot;Brussels&quot;</span><span class="p">})</span>
-<span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">my_series</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">my_series</span><span class="p">,</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
 </pre></div>
 </div>
 </div>
@@ -539,7 +559,7 @@ title="Print to PDF"
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>0</th>
+      <th>name</th>
     </tr>
   </thead>
   <tbody>
@@ -558,84 +578,6 @@ title="Print to PDF"
     <tr>
       <th>Belgium</th>
       <td>Brussels</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># numpy를 활용한  df</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">sample</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;type&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">],</span>
-                       <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">NaN</span><span class="p">]},</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
-<span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>type</th>
-      <th>a</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>k</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>k</td>
-      <td>2.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>k</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>y</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>y</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>y</td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>y</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>k</td>
-      <td>NaN</td>
     </tr>
   </tbody>
 </table>
@@ -748,6 +690,247 @@ title="Print to PDF"
 </table>
 </div></div></div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="p">{</span> 
+    <span class="s1">&#39;A&#39;</span> <span class="p">:</span> <span class="mi">1</span> <span class="p">,</span> 
+    <span class="s1">&#39;B&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;20220913&#39;</span><span class="p">)</span> <span class="p">,</span> 
+    <span class="s1">&#39;C&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="s1">&#39;float32&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">4</span> <span class="p">,</span><span class="n">dtype</span> <span class="o">=</span><span class="s1">&#39;int32&#39;</span><span class="p">)</span> <span class="p">,</span> 
+    <span class="s1">&#39;E&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">([</span><span class="s1">&#39;text&#39;</span><span class="p">,</span><span class="s1">&#39;train&#39;</span><span class="p">,</span><span class="s1">&#39;text&#39;</span><span class="p">,</span><span class="s1">&#39;train&#39;</span><span class="p">]),</span> 
+    <span class="s1">&#39;F&#39;</span> <span class="p">:</span> <span class="s1">&#39;foo&#39;</span> <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="dataframe-method">
+<h2>dataframe관련 조회 method및 속성<a class="headerlink" href="#dataframe-method" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;datatype  조회 : </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>  <span class="n">df2</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>  <span class="c1"># type을 출력해 주는 함수 </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;index내용 조회 : </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>  <span class="n">df2</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>    <span class="c1"># 메서드(함수)는  () 가 필요 , 속성은 () 필요 x </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;column명  조회 : </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>  <span class="n">df2</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;value     조회 : </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>  <span class="n">df2</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>  <span class="c1"># 데이터프레임의 값들 확인 </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datatype  조회 : 
+ A             int64
+B    datetime64[ns]
+C           float32
+D             int32
+E          category
+F            object
+dtype: object
+
+
+index내용 조회 : 
+ Int64Index([0, 1, 2, 3], dtype=&#39;int64&#39;)
+
+
+column명  조회 : 
+ Index([&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;], dtype=&#39;object&#39;)
+
+
+value     조회 : 
+ [[1 Timestamp(&#39;2022-09-13 00:00:00&#39;) 1.0 3 &#39;text&#39; &#39;foo&#39;]
+ [1 Timestamp(&#39;2022-09-13 00:00:00&#39;) 1.0 3 &#39;train&#39; &#39;foo&#39;]
+ [1 Timestamp(&#39;2022-09-13 00:00:00&#39;) 1.0 3 &#39;text&#39; &#39;foo&#39;]
+ [1 Timestamp(&#39;2022-09-13 00:00:00&#39;) 1.0 3 &#39;train&#39; &#39;foo&#39;]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="dataframe">
+<h2>dataframe 정렬<a class="headerlink" href="#dataframe" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span> <span class="p">,</span> <span class="n">ascending</span><span class="o">=</span> <span class="kc">False</span><span class="p">)</span>  
+                        <span class="c1"># axis = 0 index 기준 //  axis =1 column 기준 </span>
+                        <span class="c1"># ascending = True -&gt; 오름차순 </span>
+                        <span class="c1"># ascending = False -&gt; 내림차순</span>
+            
+<span class="c1">#print(dir(df2))  #오브젝트가 가지고 있는 속성 및 메소드 확인</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>F</th>
+      <th>E</th>
+      <th>D</th>
+      <th>C</th>
+      <th>B</th>
+      <th>A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>foo</td>
+      <td>text</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>2022-09-13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>foo</td>
+      <td>train</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>2022-09-13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>foo</td>
+      <td>text</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>2022-09-13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>foo</td>
+      <td>train</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>2022-09-13</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2022-09-13</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>text</td>
+      <td>foo</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2022-09-13</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>train</td>
+      <td>foo</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>2022-09-13</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>text</td>
+      <td>foo</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>2022-09-13</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>train</td>
+      <td>foo</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>   <span class="c1"># default 값 0 , column별  </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>  <span class="c1"># index 별 </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A    1.0
+C    1.0
+D    3.0
+dtype: float64
+A    1.0
+C    1.0
+D    3.0
+dtype: float64
+0    1.666667
+1    1.666667
+2    1.666667
+3    1.666667
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -782,7 +965,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Intro</p>
+            <p class="prev-next-title">Intro _ Pandas</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="22.handling_datetype.html" title="next page">
