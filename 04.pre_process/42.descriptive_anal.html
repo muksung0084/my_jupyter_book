@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Intro" href="../05.visualization/05.intro.html" />
+    <link rel="next" title="Intro _ Visualization" href="../05.visualization/05.intro.html" />
     <link rel="prev" title="Data Pre-processing _ tips" href="41.pre_processing_basic_tip.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to My Jupyter Book
                 </a>
             </li>
         </ul>
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../01.basic_environment/01.intro.html">
-   Intro
+   Intro _ Basic environment setting
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -145,7 +145,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../02.pandas/02.intro.html">
-   Intro
+   Intro _ Pandas
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03.numpy/03.intro.html">
-   Intro
+   Intro _ Numpy
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="04.intro.html">
-   Intro
+   Intro _ Pre-process
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -242,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../05.visualization/05.intro.html">
-   Intro
+   Intro _ Visualization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -316,7 +316,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/muksung0084/book.git/master?urlpath=tree/docs/04.pre_process/42.descriptive_anal.ipynb"
+        <a href="https://mybinder.org/v2/gh/muksung0084/my_jupyter_book.git/master?urlpath=tree/docs/04.pre_process/42.descriptive_anal.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -359,7 +359,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/muksung0084/book.git"
+        <a href="https://github.com/muksung0084/my_jupyter_book.git"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -376,7 +376,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/muksung0084/book.git/issues/new?title=Issue%20on%20page%20%2F04.pre_process/42.descriptive_anal.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/muksung0084/my_jupyter_book.git/issues/new?title=Issue%20on%20page%20%2F04.pre_process/42.descriptive_anal.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -572,23 +572,282 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<section id="describe">
-<h2>통계치 세분화 _ describe<a class="headerlink" href="#describe" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">target_data</span><span class="p">[</span><span class="s1">&#39;cycle[min]&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">percentiles</span><span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.9</span><span class="p">])</span>
-<span class="n">cycle_org</span><span class="p">[</span><span class="n">cycle_org</span><span class="p">[</span><span class="s1">&#39;gas_consum&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;gas_consum&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">percentiles</span><span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.9</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">Input In [2],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">target_data</span><span class="p">[</span><span class="s1">&#39;cycle[min]&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">percentiles</span><span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.9</span><span class="p">])</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">cycle_org</span><span class="p">[</span><span class="n">cycle_org</span><span class="p">[</span><span class="s1">&#39;gas_consum&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;gas_consum&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">percentiles</span><span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.9</span><span class="p">])</span>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[12,  3, 11],
+       [ 8,  7,  5],
+       [19,  5,  6],
+       [ 3,  3, 14],
+       [19,  8, 11],
+       [12,  2, 13],
+       [ 2,  2,  9],
+       [ 6,  5, 18],
+       [12,  7, 10],
+       [ 2, 17,  7]])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[array([10,  5, 16,  1, 18, 17, 18,  9, 10]),
+ array([ 1, 11,  9,  5, 17,  5, 16, 12, 12]),
+ array([ 2,  9,  5, 15, 18, 14,  6, 14, 14]),
+ array([13,  2,  5, 19, 14, 12, 11, 10, 16]),
+ array([19, 17,  8, 12, 18, 15,  8, 12,  2]),
+ array([ 1, 13,  6,  5,  8, 19, 13,  3,  9]),
+ array([16, 14, 16,  7, 11, 12, 17, 13,  1]),
+ array([18, 16, 13,  9, 11, 14, 12,  2, 19]),
+ array([14,  9, 10,  6,  1, 19,  4, 17, 19]),
+ array([17, 15, 16, 18, 19, 15, 17, 11, 18])]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)],</span> <span class="n">columns</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">])</span>
+<span class="n">sample</span><span class="p">[</span><span class="s1">&#39;goup&#39;</span><span class="p">]</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;target_data&#39; is not defined
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+      <th>e</th>
+      <th>f</th>
+      <th>g</th>
+      <th>h</th>
+      <th>i</th>
+      <th>goup</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10</td>
+      <td>5</td>
+      <td>16</td>
+      <td>1</td>
+      <td>18</td>
+      <td>17</td>
+      <td>18</td>
+      <td>9</td>
+      <td>10</td>
+      <td>f</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>11</td>
+      <td>9</td>
+      <td>5</td>
+      <td>17</td>
+      <td>5</td>
+      <td>16</td>
+      <td>12</td>
+      <td>12</td>
+      <td>f</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>9</td>
+      <td>5</td>
+      <td>15</td>
+      <td>18</td>
+      <td>14</td>
+      <td>6</td>
+      <td>14</td>
+      <td>14</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>13</td>
+      <td>2</td>
+      <td>5</td>
+      <td>19</td>
+      <td>14</td>
+      <td>12</td>
+      <td>11</td>
+      <td>10</td>
+      <td>16</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19</td>
+      <td>17</td>
+      <td>8</td>
+      <td>12</td>
+      <td>18</td>
+      <td>15</td>
+      <td>8</td>
+      <td>12</td>
+      <td>2</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>13</td>
+      <td>6</td>
+      <td>5</td>
+      <td>8</td>
+      <td>19</td>
+      <td>13</td>
+      <td>3</td>
+      <td>9</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>16</td>
+      <td>14</td>
+      <td>16</td>
+      <td>7</td>
+      <td>11</td>
+      <td>12</td>
+      <td>17</td>
+      <td>13</td>
+      <td>1</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>18</td>
+      <td>16</td>
+      <td>13</td>
+      <td>9</td>
+      <td>11</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+      <td>19</td>
+      <td>d</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>14</td>
+      <td>9</td>
+      <td>10</td>
+      <td>6</td>
+      <td>1</td>
+      <td>19</td>
+      <td>4</td>
+      <td>17</td>
+      <td>19</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>17</td>
+      <td>15</td>
+      <td>16</td>
+      <td>18</td>
+      <td>19</td>
+      <td>15</td>
+      <td>17</td>
+      <td>11</td>
+      <td>18</td>
+      <td>d</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="describe">
+<h2>통계치 세분화 _ describe<a class="headerlink" href="#describe" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">percentiles</span><span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.9</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count    10.000000
+mean     11.100000
+std       7.218033
+min       1.000000
+5%        1.000000
+10%       1.000000
+20%       1.800000
+30%       7.600000
+40%      11.800000
+50%      13.500000
+60%      14.800000
+70%      16.300000
+80%      17.200000
+90%      18.100000
+max      19.000000
+Name: a, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">percentiles</span><span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.9</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count     7.000000
+mean     11.142857
+std       5.871643
+min       2.000000
+5%        2.900000
+10%       3.800000
+20%       5.800000
+30%       8.200000
+40%      11.000000
+50%      14.000000
+60%      14.600000
+70%      15.200000
+80%      15.800000
+90%      16.400000
+max      17.000000
+Name: b, dtype: float64
 </pre></div>
 </div>
 </div>
@@ -598,7 +857,12 @@ title="Print to PDF"
 <h2>quantile –&gt; 분위수 찾기<a class="headerlink" href="#quantile" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">batch_skim_time4</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="s1">&#39;month&#39;</span><span class="p">,</span><span class="s1">&#39;day&#39;</span><span class="p">,</span><span class="s1">&#39;WIDTH&#39;</span><span class="p">])[</span><span class="s1">&#39;skim_time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.9</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span><span class="mi">400</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>18.1
 </pre></div>
 </div>
 </div>
@@ -608,33 +872,452 @@ title="Print to PDF"
 <h2>누적합 구하기<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;consum_a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 <span class="n">sample</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+      <th>e</th>
+      <th>f</th>
+      <th>g</th>
+      <th>h</th>
+      <th>i</th>
+      <th>goup</th>
+      <th>consum_a</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10</td>
+      <td>5</td>
+      <td>16</td>
+      <td>1</td>
+      <td>18</td>
+      <td>17</td>
+      <td>18</td>
+      <td>9</td>
+      <td>10</td>
+      <td>f</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>11</td>
+      <td>9</td>
+      <td>5</td>
+      <td>17</td>
+      <td>5</td>
+      <td>16</td>
+      <td>12</td>
+      <td>12</td>
+      <td>f</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>9</td>
+      <td>5</td>
+      <td>15</td>
+      <td>18</td>
+      <td>14</td>
+      <td>6</td>
+      <td>14</td>
+      <td>14</td>
+      <td>a</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>13</td>
+      <td>2</td>
+      <td>5</td>
+      <td>19</td>
+      <td>14</td>
+      <td>12</td>
+      <td>11</td>
+      <td>10</td>
+      <td>16</td>
+      <td>a</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19</td>
+      <td>17</td>
+      <td>8</td>
+      <td>12</td>
+      <td>18</td>
+      <td>15</td>
+      <td>8</td>
+      <td>12</td>
+      <td>2</td>
+      <td>a</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>13</td>
+      <td>6</td>
+      <td>5</td>
+      <td>8</td>
+      <td>19</td>
+      <td>13</td>
+      <td>3</td>
+      <td>9</td>
+      <td>b</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>16</td>
+      <td>14</td>
+      <td>16</td>
+      <td>7</td>
+      <td>11</td>
+      <td>12</td>
+      <td>17</td>
+      <td>13</td>
+      <td>1</td>
+      <td>c</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>18</td>
+      <td>16</td>
+      <td>13</td>
+      <td>9</td>
+      <td>11</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+      <td>19</td>
+      <td>d</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>14</td>
+      <td>9</td>
+      <td>10</td>
+      <td>6</td>
+      <td>1</td>
+      <td>19</td>
+      <td>4</td>
+      <td>17</td>
+      <td>19</td>
+      <td>c</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>17</td>
+      <td>15</td>
+      <td>16</td>
+      <td>18</td>
+      <td>19</td>
+      <td>15</td>
+      <td>17</td>
+      <td>11</td>
+      <td>18</td>
+      <td>d</td>
+      <td>111</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 </section>
 <section id="groupby-agg">
 <h2>groupby _ agg 펑션<a class="headerlink" href="#groupby-agg" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_rv2</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;regen&#39;</span><span class="p">,</span><span class="s1">&#39;group1&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;group1&#39;</span><span class="p">:</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="s1">&#39;skimm&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span><span class="p">})</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;goup&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+    </tr>
+    <tr>
+      <th>goup</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>a</th>
+      <td>3</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>b</th>
+      <td>1</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>c</th>
+      <td>2</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>d</th>
+      <td>2</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>f</th>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 </section>
 <section id="shift">
 <h2>shift 함수  –&gt; 해당 컬럼 몇번째<a class="headerlink" href="#shift" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">sample</span><span class="p">[</span><span class="s1">&#39;shift&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a_shift&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>    <span class="c1"># 아래에서 2번째 </span>
 <span class="n">sample</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+      <th>e</th>
+      <th>f</th>
+      <th>g</th>
+      <th>h</th>
+      <th>i</th>
+      <th>goup</th>
+      <th>consum_a</th>
+      <th>a_shift</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10</td>
+      <td>5</td>
+      <td>16</td>
+      <td>1</td>
+      <td>18</td>
+      <td>17</td>
+      <td>18</td>
+      <td>9</td>
+      <td>10</td>
+      <td>f</td>
+      <td>10</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>11</td>
+      <td>9</td>
+      <td>5</td>
+      <td>17</td>
+      <td>5</td>
+      <td>16</td>
+      <td>12</td>
+      <td>12</td>
+      <td>f</td>
+      <td>11</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>9</td>
+      <td>5</td>
+      <td>15</td>
+      <td>18</td>
+      <td>14</td>
+      <td>6</td>
+      <td>14</td>
+      <td>14</td>
+      <td>a</td>
+      <td>13</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>13</td>
+      <td>2</td>
+      <td>5</td>
+      <td>19</td>
+      <td>14</td>
+      <td>12</td>
+      <td>11</td>
+      <td>10</td>
+      <td>16</td>
+      <td>a</td>
+      <td>26</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19</td>
+      <td>17</td>
+      <td>8</td>
+      <td>12</td>
+      <td>18</td>
+      <td>15</td>
+      <td>8</td>
+      <td>12</td>
+      <td>2</td>
+      <td>a</td>
+      <td>45</td>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>13</td>
+      <td>6</td>
+      <td>5</td>
+      <td>8</td>
+      <td>19</td>
+      <td>13</td>
+      <td>3</td>
+      <td>9</td>
+      <td>b</td>
+      <td>46</td>
+      <td>18.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>16</td>
+      <td>14</td>
+      <td>16</td>
+      <td>7</td>
+      <td>11</td>
+      <td>12</td>
+      <td>17</td>
+      <td>13</td>
+      <td>1</td>
+      <td>c</td>
+      <td>62</td>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>18</td>
+      <td>16</td>
+      <td>13</td>
+      <td>9</td>
+      <td>11</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+      <td>19</td>
+      <td>d</td>
+      <td>80</td>
+      <td>17.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>14</td>
+      <td>9</td>
+      <td>10</td>
+      <td>6</td>
+      <td>1</td>
+      <td>19</td>
+      <td>4</td>
+      <td>17</td>
+      <td>19</td>
+      <td>c</td>
+      <td>94</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>17</td>
+      <td>15</td>
+      <td>16</td>
+      <td>18</td>
+      <td>19</td>
+      <td>15</td>
+      <td>17</td>
+      <td>11</td>
+      <td>18</td>
+      <td>d</td>
+      <td>111</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 </section>
 <section id="group-by-nth">
@@ -646,26 +1329,345 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;goup&#39;</span><span class="p">)[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">nth</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># goup의 a,d,f에서 두번째 항목 cf&gt; 0이 첫번째</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>d</th>
+      <th>f</th>
+    </tr>
+    <tr>
+      <th>goup</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>a</th>
+      <td>13</td>
+      <td>19</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>c</th>
+      <td>14</td>
+      <td>6</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>d</th>
+      <td>17</td>
+      <td>18</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>f</th>
+      <td>1</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
 </section>
 <section id="q-cut-range">
 <h2>q cut 범위별 range 자르기<a class="headerlink" href="#q-cut-range" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># q cut 범위별 range 자르기 </span>
-<span class="n">ball_vari</span><span class="p">[</span><span class="s1">&#39;rank&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">ball_vari</span><span class="p">[</span><span class="s1">&#39;vari&#39;</span><span class="p">],</span> <span class="n">q</span> <span class="o">=</span> <span class="mi">5</span> <span class="p">)</span>  <span class="o">--&gt;</span> <span class="p">[</span><span class="mf">1.</span><span class="o">***</span> <span class="o">~</span> <span class="mf">3.</span><span class="o">****</span><span class="p">]</span> <span class="n">지저분하게</span> <span class="n">나옴</span><span class="o">.</span>  
+<span class="n">sample</span><span class="p">[</span><span class="s1">&#39;range&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">],</span><span class="n">q</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 
 <span class="c1"># 소수점 없애기 precision </span>
-<span class="n">corr_data1</span><span class="p">[</span><span class="s1">&#39;temp_mean_section&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">corr_data1</span><span class="p">[</span><span class="s1">&#39;inner_temp_pv/mean&#39;</span><span class="p">],</span><span class="n">q</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">precision</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">sample</span><span class="p">[</span><span class="s1">&#39;range_2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">],</span><span class="n">q</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">precision</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
 <span class="c1"># range를 범주화 시키기 </span>
-<span class="n">target_comp_gss_20</span><span class="p">[</span><span class="s1">&#39;rank2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">target_comp_gss_20</span><span class="p">[</span><span class="s1">&#39;target_func&#39;</span><span class="p">],</span> <span class="n">q</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">sample</span><span class="p">[</span><span class="s1">&#39;range_labels&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">],</span><span class="n">q</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 
-<span class="c1"># duplicates drop 추가 </span>
-<span class="n">gss_raw</span><span class="p">[</span><span class="s1">&#39;raw_rank2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">gss_raw</span><span class="p">[</span><span class="s1">&#39;RAS&#39;</span><span class="p">],</span><span class="n">q</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">duplicates</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">)</span>
+<span class="c1"># duplicates drop 추가</span>
+<span class="n">sample</span><span class="p">[</span><span class="s1">&#39;range_labels_2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">sample</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">],</span><span class="n">q</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">duplicates</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>d</th>
+      <th>e</th>
+      <th>f</th>
+      <th>g</th>
+      <th>h</th>
+      <th>i</th>
+      <th>goup</th>
+      <th>consum_a</th>
+      <th>a_shift</th>
+      <th>range</th>
+      <th>range_2</th>
+      <th>range_labels</th>
+      <th>range_labels_2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10</td>
+      <td>5</td>
+      <td>16</td>
+      <td>1</td>
+      <td>18</td>
+      <td>17</td>
+      <td>18</td>
+      <td>9</td>
+      <td>10</td>
+      <td>f</td>
+      <td>10</td>
+      <td>2.0</td>
+      <td>(1.8, 11.8]</td>
+      <td>(2.0, 12.0]</td>
+      <td>1</td>
+      <td>(1.8, 11.8]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>11</td>
+      <td>9</td>
+      <td>5</td>
+      <td>17</td>
+      <td>5</td>
+      <td>16</td>
+      <td>12</td>
+      <td>12</td>
+      <td>f</td>
+      <td>11</td>
+      <td>13.0</td>
+      <td>(0.999, 1.8]</td>
+      <td>(0.0, 2.0]</td>
+      <td>0</td>
+      <td>(0.999, 1.8]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>9</td>
+      <td>5</td>
+      <td>15</td>
+      <td>18</td>
+      <td>14</td>
+      <td>6</td>
+      <td>14</td>
+      <td>14</td>
+      <td>a</td>
+      <td>13</td>
+      <td>19.0</td>
+      <td>(1.8, 11.8]</td>
+      <td>(2.0, 12.0]</td>
+      <td>1</td>
+      <td>(1.8, 11.8]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>13</td>
+      <td>2</td>
+      <td>5</td>
+      <td>19</td>
+      <td>14</td>
+      <td>12</td>
+      <td>11</td>
+      <td>10</td>
+      <td>16</td>
+      <td>a</td>
+      <td>26</td>
+      <td>1.0</td>
+      <td>(11.8, 14.8]</td>
+      <td>(12.0, 15.0]</td>
+      <td>2</td>
+      <td>(11.8, 14.8]</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>19</td>
+      <td>17</td>
+      <td>8</td>
+      <td>12</td>
+      <td>18</td>
+      <td>15</td>
+      <td>8</td>
+      <td>12</td>
+      <td>2</td>
+      <td>a</td>
+      <td>45</td>
+      <td>16.0</td>
+      <td>(17.2, 19.0]</td>
+      <td>(17.0, 19.0]</td>
+      <td>4</td>
+      <td>(17.2, 19.0]</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>13</td>
+      <td>6</td>
+      <td>5</td>
+      <td>8</td>
+      <td>19</td>
+      <td>13</td>
+      <td>3</td>
+      <td>9</td>
+      <td>b</td>
+      <td>46</td>
+      <td>18.0</td>
+      <td>(0.999, 1.8]</td>
+      <td>(0.0, 2.0]</td>
+      <td>0</td>
+      <td>(0.999, 1.8]</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>16</td>
+      <td>14</td>
+      <td>16</td>
+      <td>7</td>
+      <td>11</td>
+      <td>12</td>
+      <td>17</td>
+      <td>13</td>
+      <td>1</td>
+      <td>c</td>
+      <td>62</td>
+      <td>14.0</td>
+      <td>(14.8, 17.2]</td>
+      <td>(15.0, 17.0]</td>
+      <td>3</td>
+      <td>(14.8, 17.2]</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>18</td>
+      <td>16</td>
+      <td>13</td>
+      <td>9</td>
+      <td>11</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+      <td>19</td>
+      <td>d</td>
+      <td>80</td>
+      <td>17.0</td>
+      <td>(17.2, 19.0]</td>
+      <td>(17.0, 19.0]</td>
+      <td>4</td>
+      <td>(17.2, 19.0]</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>14</td>
+      <td>9</td>
+      <td>10</td>
+      <td>6</td>
+      <td>1</td>
+      <td>19</td>
+      <td>4</td>
+      <td>17</td>
+      <td>19</td>
+      <td>c</td>
+      <td>94</td>
+      <td>NaN</td>
+      <td>(11.8, 14.8]</td>
+      <td>(12.0, 15.0]</td>
+      <td>2</td>
+      <td>(11.8, 14.8]</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>17</td>
+      <td>15</td>
+      <td>16</td>
+      <td>18</td>
+      <td>19</td>
+      <td>15</td>
+      <td>17</td>
+      <td>11</td>
+      <td>18</td>
+      <td>d</td>
+      <td>111</td>
+      <td>NaN</td>
+      <td>(14.8, 17.2]</td>
+      <td>(15.0, 17.0]</td>
+      <td>3</td>
+      <td>(14.8, 17.2]</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<ul class="simple">
+<li><p>q cut 범위별 range 자르기</p></li>
+</ul>
+<p>ball_vari[‘rank’] = pd.qcut(ball_vari[‘vari’], q = 5 )  –&gt; [1.*** ~ 3.****] 지저분하게 나옴.</p>
+<ul class="simple">
+<li><p>소수점 없애기 precision</p></li>
+</ul>
+<p>corr_data1[‘temp_mean_section’] = pd.qcut(corr_data1[‘inner_temp_pv/mean’],q=4,precision=0)</p>
+<ul class="simple">
+<li><p>range를 범주화 시키기</p></li>
+</ul>
+<p>target_comp_gss_20[‘rank2’] = pd.qcut(target_comp_gss_20[‘target_func’], q=5,labels=range(5))</p>
+<ul class="simple">
+<li><p>duplicates drop 추가</p></li>
+</ul>
+<p>gss_raw[‘raw_rank2’] = pd.qcut(gss_raw[‘RAS’],q=4,duplicates=’drop’)</p>
 </section>
 </section>
 
@@ -706,7 +1708,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="../05.visualization/05.intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Intro</p>
+        <p class="prev-next-title">Intro _ Visualization</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

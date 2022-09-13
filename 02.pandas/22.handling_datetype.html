@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to My Jupyter Book
                 </a>
             </li>
         </ul>
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../01.basic_environment/01.intro.html">
-   Intro
+   Intro _ Basic environment setting
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -145,7 +145,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="02.intro.html">
-   Intro
+   Intro _ Pandas
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03.numpy/03.intro.html">
-   Intro
+   Intro _ Numpy
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../04.pre_process/04.intro.html">
-   Intro
+   Intro _ Pre-process
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -242,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../05.visualization/05.intro.html">
-   Intro
+   Intro _ Visualization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -316,7 +316,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/muksung0084/book.git/master?urlpath=tree/docs/02.pandas/22.handling_datetype.ipynb"
+        <a href="https://mybinder.org/v2/gh/muksung0084/my_jupyter_book.git/master?urlpath=tree/docs/02.pandas/22.handling_datetype.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -359,7 +359,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/muksung0084/book.git"
+        <a href="https://github.com/muksung0084/my_jupyter_book.git"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -376,7 +376,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/muksung0084/book.git/issues/new?title=Issue%20on%20page%20%2F02.pandas/22.handling_datetype.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/muksung0084/my_jupyter_book.git/issues/new?title=Issue%20on%20page%20%2F02.pandas/22.handling_datetype.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -465,12 +465,32 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#datetime">
+   datetime 표현 관련
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datetime-time-sleep">
+   datetime, time sleep 사용
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
    datetime 연산
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datetime-hour-mins-sec">
+   datetime 연산 [ hour, mins , sec 환산 ]
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#date-time-str">
    date time &lt;-&gt; str 변환
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#date-method-data-range">
+   date생성 관련 method data_range
   </a>
  </li>
 </ul>
@@ -494,12 +514,32 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#datetime">
+   datetime 표현 관련
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datetime-time-sleep">
+   datetime, time sleep 사용
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
    datetime 연산
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datetime-hour-mins-sec">
+   datetime 연산 [ hour, mins , sec 환산 ]
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#date-time-str">
    date time &lt;-&gt; str 변환
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#date-method-data-range">
+   date생성 관련 method data_range
   </a>
  </li>
 </ul>
@@ -516,9 +556,25 @@ title="Print to PDF"
 <h1>Datetype handling<a class="headerlink" href="#datetype-handling" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datetime</span> <span class="n">표현</span> <span class="n">관련</span><span class="o">.</span> 
-
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_date&#39;</span><span class="p">]</span>       <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span>         <span class="c1"># YYYY-MM-DD(문자)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="datetime">
+<h2>datetime 표현 관련<a class="headerlink" href="#datetime" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Birth&#39;</span><span class="p">:[</span><span class="s1">&#39;1993-01-28 01:10:00&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;1993-08-28 06:20:30&#39;</span><span class="p">]})</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;raise&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_date&#39;</span><span class="p">]</span>       <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span>         <span class="c1"># YYYY-MM-DD(문자)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_year&#39;</span><span class="p">]</span>       <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>         <span class="c1"># 연(4자리숫자)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_month&#39;</span><span class="p">]</span>      <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>        <span class="c1"># 월(숫자)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_month_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month_name</span><span class="p">()</span> <span class="c1"># 월(문자)</span>
@@ -528,59 +584,180 @@ title="Print to PDF"
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_hour&#39;</span><span class="p">]</span>       <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">hour</span>         <span class="c1"># 시(숫자)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_minute&#39;</span><span class="p">]</span>     <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">minute</span>       <span class="c1"># 분(숫자)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_second&#39;</span><span class="p">]</span>     <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">second</span>       <span class="c1"># 초(숫자)</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_quarter&#39;</span><span class="p">]</span>       <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">quarter</span>       <span class="c1"># 분기(숫자)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_weekday_name&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">weekday_name</span>  <span class="c1"># 요일이름(문자) (=day_name())</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_weekday&#39;</span><span class="p">]</span>       <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">weekday</span>       <span class="c1"># 요일숫자(0-월, 1-화) (=dayofweek)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_weekofyear&#39;</span><span class="p">]</span>    <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">weekofyear</span>    <span class="c1"># 연 기준 몇주째(숫자) (=week)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_dayofyear&#39;</span><span class="p">]</span>     <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofyear</span>     <span class="c1"># 연 기준 몇일째(숫자)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_days_in_month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days_in_month</span> <span class="c1"># 월 일수(숫자) (=daysinmonth)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth_quarter&#39;</span><span class="p">]</span>    <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">quarter</span>      <span class="c1"># 분기(숫자)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="n">datetime</span> <span class="n">표현</span> <span class="n">관련</span><span class="o">.</span>
-             <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Birth</th>
+      <th>Birth_date</th>
+      <th>Birth_year</th>
+      <th>Birth_month</th>
+      <th>Birth_month_name</th>
+      <th>Birth_day</th>
+      <th>Birth_time</th>
+      <th>Birth_hour</th>
+      <th>Birth_minute</th>
+      <th>Birth_second</th>
+      <th>Birth_quarter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1993-01-28 01:10:00</td>
+      <td>1993-01-28</td>
+      <td>1993</td>
+      <td>1</td>
+      <td>January</td>
+      <td>28</td>
+      <td>01:10:00</td>
+      <td>1</td>
+      <td>10</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1993-08-28 06:20:30</td>
+      <td>1993-08-28</td>
+      <td>1993</td>
+      <td>8</td>
+      <td>August</td>
+      <td>28</td>
+      <td>06:20:30</td>
+      <td>6</td>
+      <td>20</td>
+      <td>30</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
-</div>
-</div>
-<section id="datetime">
-<h2>datetime 연산<a class="headerlink" href="#datetime" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="datetime-time-sleep">
+<h2>datetime, time sleep 사용<a class="headerlink" href="#datetime-time-sleep" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
 <span class="n">time_data_sample</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">:</span>
-    <span class="n">time_data_sample</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span>
+    <span class="n">time_data_sample</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>  <span class="c1"># .now --&gt; 현재 시간 생성</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
     
 <span class="n">df_time</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">time_data_sample</span> <span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;time_now&#39;</span><span class="p">])</span>
+<span class="n">df_time</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>time_now</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2022-09-13 14:39:24.734369</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2022-09-13 14:39:24.840600</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2022-09-13 14:39:24.949478</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
+</section>
+<section id="id1">
+<h2>datetime 연산<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;days 환산 : &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_datetime&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;seconds 환산 : &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_datetime&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">seconds</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mins 환산 : &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_datetime&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">seconds</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;time 환산 : &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_datetime&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">seconds</span><span class="o">/</span><span class="mi">3600</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;now       : &#39;</span> <span class="p">,</span> <span class="n">now</span> <span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timedelta</span>
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;now       : &#39;</span> <span class="p">,</span> <span class="n">now</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;days 연산 : &#39;</span><span class="p">,</span> <span class="n">now</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;time 연산 : &#39;</span> <span class="p">,</span> <span class="n">now</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="mi">23</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mixed 연산 : &#39;</span> <span class="p">,</span> <span class="n">now</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">,</span> <span class="n">hours</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">minutes</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">seconds</span><span class="o">=</span><span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>now       :  2022-09-13 14:39:26.273994
+days 연산 :  2022-09-15 14:39:26.273994
+time 연산 :  2022-09-14 13:39:26.273994
+mixed 연산 :  2022-09-14 15:59:56.273994
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="datetime-hour-mins-sec">
+<h2>datetime 연산 [ hour, mins , sec 환산 ]<a class="headerlink" href="#datetime-hour-mins-sec" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;days 환산 : &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_now&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;seconds 환산 : &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_now&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">seconds</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mins 환산 : &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_now&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">seconds</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;time 환산 : &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_now&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">seconds</span><span class="o">/</span><span class="mi">3600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>days 환산 :  0
+seconds 환산 :  2
+mins 환산 :  0.03333333333333333
+time 환산 :  0.0005555555555555556
 </pre></div>
 </div>
 </div>
@@ -588,35 +765,108 @@ title="Print to PDF"
 </section>
 <section id="date-time-str">
 <h2>date time &lt;-&gt; str 변환<a class="headerlink" href="#date-time-str" title="Permalink to this headline">#</a></h2>
+<p>날짜와 시간(datetime)  –&gt; 문자열 : strftime</p>
+<p>date = now.strftime(%Y-%m-%d)  // series가 아닌 단순히 하나의 문자열 data인 경우 //</p>
+<p>series type에 적용을 원하면 df[‘a’].dt.strftime(~~)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">날짜와</span> <span class="n">시간</span><span class="p">(</span><span class="n">datetime</span><span class="p">)</span>  <span class="o">--&gt;</span> <span class="n">문자열</span> <span class="p">:</span> <span class="n">strftime</span>    
-<span class="n">date</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="o">%</span><span class="k">Y</span>-%m-%d)  // series가 아닌 단순히 하나의 문자열 data인 경우 // 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;date_to_str&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_now&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y - %m - </span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>문자열 –&gt; datetime type으로 변환 : strptime</p>
+<p>datetime.strptime(원하는 문자열 , 원하는 형태 ‘%Y - %m - %d %H:%M:%S’ )</p>
+<p>series type에 적용르 원하면, [ list comprehension 리스트컴프리핸션을 이용 ]</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;str_to_date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;%Y - %m - </span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;date_to_str&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_time</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="n">series</span> <span class="n">type에</span> <span class="n">적용을</span> <span class="n">원하면</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="o">~~</span><span class="p">)</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>time_now</th>
+      <th>date_to_str</th>
+      <th>str_to_date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2022-09-13 14:39:24.734369</td>
+      <td>2022 - 09 - 13 14:39:24</td>
+      <td>2022-09-13 14:39:24</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2022-09-13 14:39:24.840600</td>
+      <td>2022 - 09 - 13 14:39:24</td>
+      <td>2022-09-13 14:39:24</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2022-09-13 14:39:24.949478</td>
+      <td>2022 - 09 - 13 14:39:24</td>
+      <td>2022-09-13 14:39:24</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_time</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>time_now       datetime64[ns]
+date_to_str            object
+str_to_date    datetime64[ns]
+dtype: object
 </pre></div>
 </div>
 </div>
 </div>
+</section>
+<section id="date-method-data-range">
+<h2>date생성 관련 method data_range<a class="headerlink" href="#date-method-data-range" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_str&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_datetime&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y - %m - </span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dates</span>  <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s1">&#39;20220101&#39;</span><span class="p">,</span><span class="n">periods</span> <span class="o">=</span> <span class="mi">6</span><span class="p">)</span>  <span class="c1"># 20220101 부터 6개의 기간</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dates</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">문자열</span> <span class="o">--&gt;</span> <span class="n">datetime</span> <span class="n">type으로</span> <span class="n">변환</span> <span class="p">:</span> <span class="n">strptime</span>     
-<span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">원하는</span> <span class="n">문자열</span> <span class="p">,</span> <span class="n">원하는</span> <span class="n">형태</span> <span class="s1">&#39;%Y - %m - </span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span> <span class="p">)</span>    
-<span class="n">series</span> <span class="n">type에</span> <span class="n">적용르</span> <span class="n">원하면</span><span class="p">,</span> <span class="p">[</span> <span class="nb">list</span> <span class="n">comprehension</span> <span class="n">리스트컴프리핸션을</span> <span class="n">이용</span> <span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;str-datetime&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;%Y - %m - </span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df_time</span><span class="p">[</span><span class="s1">&#39;time_str&#39;</span><span class="p">]]</span>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DatetimeIndex([&#39;2022-01-01&#39;, &#39;2022-01-02&#39;, &#39;2022-01-03&#39;, &#39;2022-01-04&#39;,
+               &#39;2022-01-05&#39;, &#39;2022-01-06&#39;],
+              dtype=&#39;datetime64[ns]&#39;, freq=&#39;D&#39;)
 </pre></div>
 </div>
 </div>
